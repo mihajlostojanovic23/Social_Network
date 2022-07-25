@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="globalc.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="user_image">
+            <img src="img/profile.jpg" alt="">
+            <p>Welcome, Mihajlo</p>
+        </div>
+       
+    </div>
+    <div class="page">
+        <div class="info_column">
+            <p class="user_name">Name: Mihajlo</p>
+            <p class="user_email">Email: mihajlo@gmail.com</p>
+            <div class="options">
+                <div class="change_profile">Change profile</div>
+                <div class="logout">Logout</div>
+            </div>
+
+            
+        </div>
+        <div class="posts_column">
+            <div class="posts_container">
+                <h2>POST Form</h2>
+            <form id="form_post" class="formm">
+                <textarea name="" id="post_area" placeholder="Napisi nesto i objavi" cols="30" rows="4"></textarea>
+                <button class="btn_post_send">Send</button>
+            </form>
+           
+        </div>
+    </div>
+    </div>
+
+    <div class="info_modal">
+        <div class="change_info_container">
+            <h2>Change profile</h2>
+            <form id="info_change">
+                <label>Username</label>
+                <input type="text" name="" id="korisnicko_ime">
+
+                <label >Email</label>
+                <input type="text" name="" id="email_change">
+
+                <label>Password</label>
+                <input type="password" name="" id="password_change">
+                <button class="change_items">Change</button>
+            </form>
+            <hr class="line_change_p">
+            <button class="btn_delete">Delete profile</button>
+        </div>
+        <div class="close_modal">X</div>
+    </div>
+
+    <div class="posts_items">
+        
+        </div>
+       
+    </div>
+
+    <script src="js/User.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js/Comments.js"></script>
+    <script src="js/Post.js"></script>
+    <script src="js/hexa.js"></script>
+</body>
+</html>

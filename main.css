@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Vector_2646.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.616) 0 0 0 10000px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+
+
+.section_login {
+    width: 900px;
+    height: 500px;
+    margin:auto;
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo_section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    background: rgb(157,50,225);
+    background: linear-gradient(0deg, rgba(157,50,225,1) 0%, rgba(122,122,246,1) 100%);
+    width: 120px;
+    height: 120px;    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    
+}
+
+.logo_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* LOGIN FORM */
+
+.main_wrapper {
+    background: rgb(157,50,225);
+    background: linear-gradient(0deg, rgba(157,50,225,1) 0%, rgba(122,122,246,1) 100%);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.line {
+    margin-top: 10px;
+    width: 50%;
+    height: 3px;
+    border: 0px;
+    background-color: rgb(11 9 28);
+    
+    
+}
+
+#login_form > h2 {
+    text-align: center;
+    margin: 20px 0px;
+
+}
+
+
+.mail, .pass {
+    position: relative;
+    margin: 30px 0px;
+}
+#login_email {
+    color: white;
+    position: relative;
+    height: 36px;
+    width: 300px;
+    background-color: unset;
+    border: 0; padding: 5px 5px 7px;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+    transition: 0.4s;
+}
+
+#login_email::placeholder {
+    color: white;
+}
+
+#login_email:focus {
+    padding: 5px 17px 7px; transition: 0.4s;
+    outline: none;
+    color: white;
+}
+
+
+#login_email ~ .focus-border{
+    position: absolute;
+    height: 36px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: 0.4s;}
+
+#login_email:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;
+    border: 1px solid #ffffff;}
+
+#login_password {
+    color: white;
+    background-color: unset;
+    height: 35px;
+    width: 300px;
+    border: 0; padding: 5px 5px 7px;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc; 
+    transition: 0.4s;
+}
+
+#login_password::placeholder {
+    color: white;
+}
+
+#login_password:focus {
+    padding: 5px 17px 7px; transition: 0.4s;
+    outline: none;
+    color: white;
+}
+
+#login_password ~ .focus-border{position: absolute; height: 36px; bottom: 0; left: 0; width: 0; transition: 0.4s;}
+#login_password:focus ~ .focus-border{width: 100%; transition: 0.4s; border: 1px solid #ffffff;}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+}
+
+.login_btn {
+    width: 120px;
+    height: 40px;
+    transition: 300ms ease ;
+    border: unset;
+    font-size: 15px;
+}
+
+.login_btn:hover {
+    width: 120px;
+    height: 40px;
+    transition: 300ms ease;
+    background-color: rgb(196, 196, 196);
+   border: unset;
+}
+.line2 {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 2px;
+    margin: 10px 0px;
+    border: unset;
+}
+
+
+.no-acc-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-acc-register p {
+    text-align: center;
+    
+}
+
+
+
+
+/* REGISTER FORM*/
+.register_form {
+    position: relative;
+    width: 50%;
+    background: rgb(157,50,225);
+    background: linear-gradient(0deg, rgba(157,50,225,1) 0%, rgba(122,122,246,1) 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+
+.register_btn {
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    transition: 300ms;
+    border: unset;
+}
+
+.register_btn:hover {
+    width: 90px;
+    height: 30px;
+    transition: 300ms ease;
+    background-color: rgb(196, 196, 196);
+   border: unset;
+}
+
+.register_form > h2 {
+    color: white;
+}
+
+.register_form div {
+    position: relative;
+    margin: 10px 0px;
+}
+
+.registration input {
+    color: white;
+    background-color: unset;
+    height: 35px;
+    width: 300px;
+    border: 0; padding: 5px 5px 7px;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc; 
+    transition: 0.4s;
+}
+
+.registration input::placeholder {
+    color: white;
+}
+
+.registration input:focus {
+    padding: 5px 17px 7px; transition: 0.4s;
+    outline: none;
+    color: white;
+}
+
+
+
+.reg_btn {
+    width: 120px;
+    height: 40px;
+    border: unset;
+    transition: 300ms;
+}
+
+.reg_btn:hover {
+    width: 120px;
+    height: 40px;
+    transition: 300ms;
+    background-color: rgb(196, 196, 196);
+
+}
+
+
+
+.reg_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yes_acc_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yes_acc_login p {
+    color: white;
+}
+
+.yes_acc_login button {
+width: 90px;
+height: 30px;
+margin: 10px 0px;
+}
+
+form ul li {
+    color: rgb(238, 238, 238);
+    font-size: 15px;
+   
+    box-shadow: rgba(151, 0, 0, 0.767) 0 0 0 10000px inset;
+
+}
+form ul {
+    list-style: none;
+    
+}

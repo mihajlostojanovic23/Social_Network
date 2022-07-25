@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="section_login">
+        <div class="logo_section">
+        <div class="logo">
+            
+            <img src="logo3.png" class="logo_img" alt="">
+        </div>
+        <h2 class="title">Global Connection</h2>
+        <hr class="line"> 
+    </div>
+        <div class="main_wrapper">
+            <form id="login_form">
+                <h2>Login</h2>
+                <div class="mail">
+                   
+                    <input type="email" placeholder="E-mail" name="email" id="login_email">
+                      <span class="focus-border"></span>
+                </div>
+                <div class="pass">
+                    
+                    <input type="password" placeholder="Password" name="password" id="login_password">
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="btn">
+                    <button class="login_btn">Login</button>
+                </div>
+            </form>
+            <hr class="line2">
+            <div class="no-acc-register">
+                <p>Nemas nalog?</p>
+                <button class="register_btn">Registruj se!</button>
+            </div>
+        </div>
+        <div class="register_form">
+            <h2>Register</h2>
+            <form id="registration_form"  class="registration">
+            
+             <div class="username">
+                <input type="text" placeholder="Username" name="korisnicko_ime" id="korisnicko_ime">
+                <span class="focus-border"></span>
+             </div>
+             <div class="mail_adress">
+                <input type="text" placeholder="Email" name="register_email" id="email">
+                <span class="focus-border"></span>
+             </div>
+             <div class="passw">
+                <input type="password" placeholder="Password" name="register_lozinka" id="lozinka">
+                <span class="focus-border"></span>
+             </div>
+             <div class="passw">
+                <input type="password" placeholder="Password" name="ponovi_lozinku" id="ponovi_lozinku">
+                <span class="focus-border"></span>
+             </div>
+             <div class="reg_btn_container">
+                <button class="reg_btn">Register</button>
+             </div>
+            </form>
+            <div class="yes_acc_login">
+                <p>Ukoliko imate nalog</p>
+                <button>Login</button>
+            </div>
+        </div>
+</div>
+
+
+
+
+<script src="js/Validator.js"></script>
+<script src="js/Session.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/User.js"></script>
+
+</body>
+</html>
